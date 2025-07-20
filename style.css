@@ -1,0 +1,70 @@
+/* styles.css */
+
+body, h2, h3, h4, p, a {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.section-heading {
+  color: #3B3B3B;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.w3-dark-gray {
+  background-color: #3B3B3B !important;
+}
+
+.w3-dark-gray:hover, .w3-hover-mudstone:hover {
+  background-color: #555b6e !important;
+  color: #f0f0f0 !important;
+}
+
+.w3-hover-mudstone {
+  color: #3B3B3B;
+  transition: color 0.3s ease;
+}
+
+.team-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.service-img {
+  max-width: 120px;
+  border-radius: 8px;
+  margin-right: 15px;
+  float: left;
+}
+
+.contact-link {
+  color: #3B3B3B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  color: #555b6e;
+}
+
+/* Layout adjustments for smaller screens */
+@media (max-width: 992px) {
+  .w3-main {
+    margin-left: 0 !important;
+  }
+  .service-img {
+    float: none;
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 80%;
+  }
+  .w3-row-padding > div {
+    margin-bottom: 20px;
+  }
+  .w3-quarter {
+    width: 100% !important;
+  }
+}
