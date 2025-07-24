@@ -7,88 +7,116 @@
   <link rel="icon" type="images/png" href="https://iabubakar106.github.io/bros/Logo.jpg">
   <!-- W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style type="text/css">
+    
+  </style>
 </head>
 <body class="w3-light-grey">
 
   <!-- Top Navigation Bar -->
-  <div class="w3-bar w3-top w3-dark-gray w3-large" style="z-index:4;">
-    <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-gray" id="menu-btn" title="Toggle Navigation">&#9776;</button>
-    <span class="w3-bar-item w3-text-white" style="font-weight:700; font-size:1.3rem;">Inyass Technology Solutions Limited</span>
+  <div class="w3-bar w3-top w3-card w3-large" style="z-index:4;">
+    <button class="w3-bar-item w3-button w3-hide-large w3-right w3-hover-none w3-hover-text-black" id="menu-btn" title="Toggle Navigation">&#9776;</button><span class="w3-left w3-margin"><img src="https://iabubakar106.github.io/bros/Logo.jpg" alt="Logo" style="height: 40px; width:30 "/></span>
+    <span class="w3-bar-item" style="font-weight:700; font-size:1.3rem; text-shadow:1px 1px 0 #444;">Inyass Technology<br><span class="w3-text-blue w3-text-small" style="font-size: 15px;">Solutions Limited</span></span>
   </div>
 
   <!-- Sidebar / Side Navigation -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-card w3-animate-left" style="width:260px; top:43px; z-index:3;" id="mySidebar">
-    <class="w3-bar-item" style="font-weight:700; margin-top: 40px; margin-left: 0px;"><img src="https://iabubakar106.github.io/bros/Logo.jpg" alt="Logo" style="hight: 30px;" class="w3-margin-bottom" />
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-card w3-animate-left" style="width:260px; top:75px; z-index:3;" id="mySidebar">
+    <class="w3-bar-item" style="font-weight:700; margin-top: 40px; margin-left: 0px;">
     <a href="#intro" class="w3-bar-item w3-button w3-hover-mudstone">Home</a>
     <a href="#missionvision" class="w3-bar-item w3-button w3-hover-mudstone">Mission & Vision</a>
-    <a href="#management" class="w3-bar-item w3-button w3-hover-mudstone">Teams</a>
+    <a href="#management" class="w3-bar-item w3-button w3-hover-mudstone">Team</a>
     <a href="#services" class="w3-bar-item w3-button w3-hover-mudstone">Services</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hover-mudstone">Contact Information</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-mudstone">Contact</a>
   </nav>
 
   <!-- Overlay for mobile -->
   <div class="w3-overlay w3-hide-large" style="cursor:pointer" id="overlay"></div>
 
   <!-- Page Content -->
-  <div class="w3-main" style="margin-left:260px; margin-top:43px;">
+  <div class="w3-main" style="margin-left:260px; margin-top:75px;">
 
     <!-- Introduction Section -->
-    <section id="intro" class="w3-container w3-padding-32 w3-white w3-card w3-margin">
-      <h2 class="section-heading"><marquee>Welcome to Inyass Technology Solutions Limited Official Website</marquee></h2>
-      <div class="w3-content" style="width:100%">
-  <img class="mySlides" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" style="width:100%" alt="Website Development" />
-  <img class="mySlides" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" style="width:100%" alt="Corporate Branding and Training" />
-  <img class="mySlides" src="https://iabubakar106.github.io/bros/Manpower.jpeg" style="width:100%" alt="Manpower Training" />
-</div>
-    <div class="w3-card w3-margin">
-      <p class="w3-justify w3-animate-opacity" style="margin: 10px 10px 10px 10px;">
+    <section id="intro" class="w3-container w3-padding-32 w3-white w3-card w3-margin ">
+      <h2 class="section-heading w3-text-blue w3-wide" style="text-shadow:1px 1px 0 #444;"><marquee><b>Welcome to Inyass Technology Solutions Limited Official Website</b></marquee></h2>
+      <div class="w3-content" style="width:100%; ">
+        <img class="mySlides" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" style="width:100%" alt="Website Development" />
+        <img class="mySlides" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" style="width:100%" alt="Corporate Branding and Training" />
+        <img class="mySlides" src="https://iabubakar106.github.io/bros/Manpower.jpeg" style="width:100%" alt="Manpower Training" />
+      </div>
+      <div class="w3-margin w3-card">
+      <!--<p class="w3-justify w3-margin w3-animate-opacity">
         Inyass Technology Solutions Limited is a trusted technology solutions provider specializing in computer networking, website 
         development, corporate branding, IT consulting, import & export of computer units and accessories, as well as professional manpower training.
         Inyass Technology Solutions Ltd formally Inyass PC Solutions Ventures is an Information Technology (IT) solution company establish and dully registered with Corporate Affairs Commission as a Limited Liability Company. The Company is successfully operating in Niger State and Nigeria at large on both small- and large-scale services in Information and Communication Technology, Web Designs (Web browsers, ftp, e-mail, associated hardware, Internet service providers, and so forth), computer training, supply and installation of computers alongside modern accessories, electronic gadgets, stationary supplies and IT collaboration, printing and publishing services. With the present market boom and concurrent development in IT across world, and the desire for upgrade in computer and information technology, the Company has successfully expanded its target from individual small scale clients to larger and bigger industrial, commercial and institutional clients. Thus, business plan, vision and goals have tasked us to making this transition successful and ensure exceptional quality service delivery to our esteemed clients.
-Every sector is today IT compliant, but the high and modern technology sector is the eye of the storm. The chances of wider opportunity in the sector stands a better chance in the modern world. This is simply because it defines and refines the future, while respect and discipline are crucial, notwithstanding, the inherent problems of quacks and substandard products becomes a great challenge in the industry. Inyass Technology Solutions Ltd is committed to providing customers with modern, inventive and high quality products and services that stand the test of time and are in fact, second to none. We have the "leading edge" when it comes to the technical knowhow with respect to remote computer repairs, networking, software development and installations, etc.
+        Every sector is today IT compliant, but the high and modern technology sector is the eye of the storm. The chances of wider opportunity in the sector stands a better chance in the modern world. This is simply because it defines and refines the future, while respect and discipline are crucial, notwithstanding, the inherent problems of quacks and substandard products becomes a great challenge in the industry. Inyass Technology Solutions Ltd is committed to providing customers with modern, inventive and high quality products and services that stand the test of time and are in fact, second to none. We have the "leading edge" when it comes to the technical knowhow with respect to remote computer repairs, networking, software development and installations, etc.
 
-      </p>
+      </p>-->
     </div>
     </section>
 
+    <section class=" w3-container w3-padding-32 w3-margin w3-center">
+      <div class="w3-container">
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-2019-princess-blue w3-round-xxlarge w3-hover-blue w3-wide" style="text-shadow:1px 1px 0 #444";><h2>About Us</h2></button>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content" style="margin-top: 50px; margin-bottom: 50px;">
+            <header class="w3-container w3-2019-princess-blue"> 
+              <span onclick="document.getElementById('id01').style.display='none'" 
+              class="w3-button w3-display-topright w3-hover-blue">&times;</span>
+              <h2>InyassTech Brief Description</h2>
+            </header>
+            <div class="w3-container">
+              <p class="w3-justify w3-margin w3-animate-opacity">
+                Inyass Technology Solutions Limited is a trusted technology solutions provider specializing in computer networking, website 
+                development, corporate branding, IT consulting, import & export of computer units and accessories, as well as professional manpower training.
+                Inyass Technology Solutions Ltd formally Inyass PC Solutions Ventures is an Information Technology (IT) solution company establish and dully registered with Corporate Affairs Commission as a Limited Liability Company. The Company is successfully operating in Niger State and Nigeria at large on both small- and large-scale services in Information and Communication Technology, Web Designs (Web browsers, ftp, e-mail, associated hardware, Internet service providers, and so forth), computer training, supply and installation of computers alongside modern accessories, electronic gadgets, stationary supplies and IT collaboration, printing and publishing services. With the present market boom and concurrent development in IT across world, and the desire for upgrade in computer and information technology, the Company has successfully expanded its target from individual small scale clients to larger and bigger industrial, commercial and institutional clients. Thus, business plan, vision and goals have tasked us to making this transition successful and ensure exceptional quality service delivery to our esteemed clients.
+                Every sector is today IT compliant, but the high and modern technology sector is the eye of the storm. The chances of wider opportunity in the sector stands a better chance in the modern world. This is simply because it defines and refines the future, while respect and discipline are crucial, notwithstanding, the inherent problems of quacks and substandard products becomes a great challenge in the industry. Inyass Technology Solutions Ltd is committed to providing customers with modern, inventive and high quality products and services that stand the test of time and are in fact, second to none. We have the "leading edge" when it comes to the technical knowhow with respect to remote computer repairs, networking, software development and installations, etc.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Mission & Vision Section -->
-    <section id="missionvision" class="w3-container w3-padding-32 w3-white w3-card w3-margin">
+    <section id="missionvision" class="w3-container w3-padding-32 w3-white w3-card w3-margin w3-round-large">
       <h2 class="section-heading">Mission & Vision</h2>
       <div class="w3-row-padding">
-        <div class="w3-half w3-padding-small w3-card">
+        <div class="w3-half w3-padding-small">
           <h4>Mission</h4>
           <p class="w3-justify w3-animate-left">To deliver mature, reliable, and innovative technology solutions that empower businesses and individuals all over Nigeria to succeed in the digital age.
           To develop workable software solutions, facilitate data processing and automation in business and to be the leading service providers in terms of supply of qualitative of goods, products and service delivery, especially in IT solutions and ICT in Nigeria and beyond.</p>
         </div>
-        <div class="w3-half w3-padding-small w3-card">
+        <div class="w3-half w3-padding-small">
           <h4>Vision</h4>
-          <p class="w3-justify w3-animate-right">To be the foremost provider of integrated technology solutions and training services known for quality and integrity throughout Africa. To become a leading figure of quality amongst others on business automation, using Information and Communication Technology by inscribing our name in every office, organization, institution and household without compromising the quality of services and products, and to become a leading example in the nearest future within a shortest possible time.</p>
+          <p class="w3-justify w3-animate-left">To be the foremost provider of integrated technology solutions and training services known for quality and integrity throughout Africa. To become a leading figure of quality amongst others on business automation, using Information and Communication Technology by inscribing our name in every office, organization, institution and household without compromising the quality of services and products, and to become a leading example in the nearest future within a shortest possible time.</p>
         </div>
       </div>
     </section>
 
     <!-- Management Team Section -->
-    <section id="management" class="w3-container w3-padding-32 w3-white w3-card w3-margin">
+    <section id="management" class="w3-container w3-padding-32 w3-white w3-card w3-margin w3-round-large">
       <h2 class="section-heading">Team</h2>
       <div class="w3-row-padding w3-center w3-margin-top">
 
         <div class="w3-quarter w3-margin-bottom">
           <div class="w3-card w3-padding">
-            <img src="images/Founder.jpg" alt="Yahaya Abdulrahman A." class="w3-circle w3-margin-bottom team-photo" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
-            <h4>Yahaya Abdulrahman Abubakar</h4>
+            <img src="https://iabubakar106.github.io/bros/Founder.jpg" alt="Yahaya Abdulrahman Abubakar" class="w3-circle w3-margin-bottom" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
+            <h4>Yahaya Abdulrahman A.</h4>
             <p class="w3-opacity">Founder</p>
           </div>
         </div>
 
         <div class="w3-quarter w3-margin-bottom">
           <div class="w3-card w3-padding">
-            <img src="https://iabubakar106.github.io/bros/Software.jpg" alt="Abubakar Ibrahim" class="w3-circle w3-margin-bottom team-photo" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
+            <img src="https://iabubakar106.github.io/bros/Software.jpg" alt="Abubakar Ibrahim" class="w3-circle w3-margin-bottom" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
             <h4>Abubakar Ibrahim</h4>
             <p class="w3-opacity">Co-founder/Software Developer</p>
           </div>
@@ -96,7 +124,7 @@ Every sector is today IT compliant, but the high and modern technology sector is
 
         <div class="w3-quarter w3-margin-bottom">
           <div class="w3-card w3-padding">
-            <img src="https://iabubakar106.github.io/bros/Support.jpg" alt="Yahaya Mohammed Abubakar" class="w3-circle w3-margin-bottom team-photo" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
+            <img src="https://iabubakar106.github.io/bros/Support.jpg" alt="Yahaya Mohammed Abubakar" class="w3-circle w3-margin-bottom" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
             <h4>Yahaya Mohammed Abubakar</h4>
             <p class="w3-opacity">Director</p>
           </div>
@@ -104,7 +132,7 @@ Every sector is today IT compliant, but the high and modern technology sector is
         
         <div class="w3-quarter w3-margin-bottom">
           <div class="w3-card w3-padding">
-            <img src="https://iabubakar106.github.io/bros/Secretary (2).jpg" alt="Bar. Mohammed Aliyu Kutigi" class="w3-circle w3-margin-bottom team-photo" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
+            <img src="https://iabubakar106.github.io/bros/Secretary (2).jpg" alt="Bar. Mohammed Aliyu Kutigi" class="w3-circle w3-margin-bottom" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
             <h4> Mohammed Aliyu Esq.</h4>
             <p class="w3-opacity">Secretary</p>
           </div>
@@ -114,80 +142,99 @@ Every sector is today IT compliant, but the high and modern technology sector is
     </section>
 
     <!-- Goods & Services Section -->
-    <section id="services" class="w3-container w3-padding-32 w3-white w3-card w3-margin">
+    <section id="services" class="w3-container w3-padding-32 w3-blue w3-card w3-margin w3-round-large">
       <h2 class="section-heading">Our Services</h2>
 
       <div class="w3-container w3-margin-top">
 
-        <button onclick="toggleAccordion('networkingAccordion')" class="w3-button w3-block w3-dark-gray w3-left-align w3-margin-bottom w3-card">
+        <button onclick="toggleAccordion('networkingAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
           Computer Networking
         </button>
         <div id="networkingAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://iabubakar106.github.io/bros/Networking.jpeg" alt="Computer Networking" class="w3-left w3-margin-right " style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
+          <img src="https://iabubakar106.github.io/bros/Networking.jpeg" alt="Computer Networking" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
           <p>Installation and maintenance of comprehensive computer networks ensuring secure and efficient connectivity.</p>
         </div>
 
-        <button onclick="toggleAccordion('websiteAccordion')" class="w3-button w3-block w3-dark-gray w3-left-align w3-margin-bottom w3-card">
+        <button onclick="toggleAccordion('websiteAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
           Website Development
         </button>
         <div id="websiteAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Website Development" class="w3-left w3-margin-right " style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Website Development" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
           <p>Custom website design and development to grow your digital presence and brand identity.</p>
         </div>
 
-        <button onclick="toggleAccordion('brandingTrainingAccordion')" class="w3-button w3-block w3-dark-gray w3-left-align w3-margin-bottom w3-card">
+        <button onclick="toggleAccordion('brandingTrainingAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
           Corporate Branding and Training
         </button>
         <div id="brandingTrainingAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Corporate Branding and Training" class="w3-left w3-margin-right " style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Corporate Branding and Training" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
           <p>Professional corporate branding solutions and manpower training for development and business excellence.</p>
         </div>
 
-        <button onclick="toggleAccordion('importExportAccordion')" class="w3-button w3-block w3-dark-gray w3-left-align w3-margin-bottom w3-card">
+        <button onclick="toggleAccordion('importExportAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
           Import & Export of Computer Equipment
         </button>
         <div id="importExportAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Import & Export" class="w3-left w3-margin-right " style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Import & Export" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
           <p>Import and export of all computer units, equipment, machines, and accessories to meet your technological needs.</p>
         </div>
 
-        <button onclick="toggleAccordion('accessoriesAccordion')" class="w3-button w3-block w3-dark-gray w3-left-align w3-margin-bottom w3-card">
+        <button onclick="toggleAccordion('accessoriesAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
           Supply & Installation of Accessories and Parts
         </button>
         <div id="accessoriesAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Accessories & Parts" class="w3-left w3-margin-right " style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Accessories & Parts" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
           <p>Efficient supply and professional installation of computer accessories and parts tailored to your setup.</p>
         </div>
 
-        <button onclick="toggleAccordion('trainingAccordion')" class="w3-button w3-block w3-dark-gray w3-left-align w3-margin-bottom w3-card">
+        <button onclick="toggleAccordion('trainingAccordion')" class="w3-button w3-block w3-white
+         w3-left-align w3-margin-bottom w3-card">
           Manpower Training & Development
         </button>
         <div id="trainingAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://iabubakar106.github.io/bros/Manpower.jpeg" alt="Manpower Training" class="w3-left w3-margin-right " style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
+          <img src="https://iabubakar106.github.io/bros/Manpower.jpeg" alt="Manpower Training" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
           <p>Comprehensive manpower training programs for IT skills enhancement and career advancement.</p>
         </div>
 
-        <button onclick="toggleAccordion('consultingAccordion')" class="w3-button w3-block w3-dark-gray w3-left-align w3-margin-bottom w3-card">
+        <button onclick="toggleAccordion('consultingAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
           IT Consulting
         </button>
         <div id="consultingAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://iabubakar106.github.io/bros/ITConsult.jpeg" alt="IT Consulting" class="w3-left w3-margin-right " style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
+          <img src="https://iabubakar106.github.io/bros/ITConsult.jpeg" alt="IT Consulting" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
           <p>Professional IT consulting services to optimize your business technology strategy and operations.</p>
         </div>
 
       </div>
     </section>
 
-    <!-- Contact Information Section -->
-    <section id="contact" class="w3-container w3-padding-32 w3-white w3-card w3-margin">
-      <h2 class="section-heading">Contact Information</h2>
-      <p><strong>Email:</strong> <a href="mailto:info@inyasstech.name.ng" class="contact-link">info@inyasstech.name.ng</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+2348060927395" class="contact-link">08060927395</a> or <a href="tel:+2349168261937" class="contact-link">09168261937</a></p>
-      <p><strong>Address:</strong> 049 Area 1 Street 3, Barikin Sale Modern City Minna, Niger State, Nigeria</p>
+    <!-- More Questions? -->
+    <section id="question" class="w3-container w3-center w3-padding-32 w3-white w3-card w3-margin w3-round-large w3-light-grey">
+      <h1 class="section-heading">More Questions?</h1>
+      <p>Can't find the answer you're looking for? Don't hesitate to reach out to our friendly support team.</p>
+      <div class="w3-row">
+        <button class="w3-btn w3-2019-jester-red w3-round-large">
+          <div class="w3-half w3-container">
+          <a href="mailto:info@inyasstech.name.ng" class="contact-link w3-text-white">Email</a>
+        </div>
+        </button>
+        <button class="w3-btn w3-round-large w3-2019-eden">
+          <div class="w3-half w3-container">
+            <a href="https://wa.me/+2347039868688" target="_blank" class="contact-link w3-text-white">Whatsapp</a>
+        </div>
+        </button>
+      </div>
     </section>
 
+    <!-- Contact Information Section 
+    <section id="contact" class="w3-container w3-padding-32 w3-white w3-card w3-margin w3-round-large">
+      <h2 class="section-heading">Contact Information</h2>
+      <p><strong>Email:</strong> <a href="mailto:fanofinyass98@gmail.com" class="contact-link">fanofinyass98@gmail.com or iabubakar106@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+2348060927395" class="contact-link">08060927395 or 07039868688</a></p>
+      <p><strong>Address:</strong> 049 Area 1 Street 3, Barikin Sale Modern City Minna, Niger State, Nigeria</p>
+    </section>-->
+
     <!-- Footer -->
-    <footer class="w3-container w3-dark-gray w3-center w3-padding-16">
+    <footer class="w3-container w3-2019-princess-blue w3-center w3-padding-16">
       &copy; 2025 Inyass Technology Solutions Limited. All rights reserved.
     </footer>
   </div>
