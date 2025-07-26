@@ -10,6 +10,57 @@
 
   gtag('config', 'G-XWJL0NPXH3');
 </script>
+
+  <script>
+
+// Define dataLayer and the gtag function.
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+// Set default consent for specific regions according to your requirements
+
+gtag('consent', 'default', {
+
+'ad_storage': 'denied',
+
+'ad_user_data': 'denied',
+
+'ad_personalization': 'denied',
+
+'analytics_storage': 'denied',
+
+'regions':[<list of ISO 3166-2 region codes>]
+
+});
+
+// Set default consent for all other regions according to your requirements
+
+gtag('consent', 'default', {
+
+'ad_storage': 'denied',
+
+'ad_user_data': 'denied',
+
+'ad_personalization': 'denied',
+
+'analytics_storage': 'denied'
+
+});
+
+</script>
+
+<!-- PASTE YOUR COOKIEHUB CMP CODE SNIPPET HERE -- >
+
+<script src="https://cdn.cookiehub.eu/c2/580a1e6e.js"></script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+var cpm = {};
+window.cookiehub.load(cpm);
+});
+</script>
+  
   
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
