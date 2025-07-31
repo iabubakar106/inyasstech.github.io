@@ -1,6 +1,8 @@
 /* styles.css */
 
-
+.mySlide(){
+  display: none;
+}
 .contact-link {
   color: #3B3B3B;
   text-decoration: none;
