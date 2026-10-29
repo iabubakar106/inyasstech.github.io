@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Inyass Technology Solutions Limited</title>
-  <link rel="icon" type="images/png" href="https://iabubakar106.github.io/bros/Logo.jpg">
+  <link rel="icon" type="image/png" href="images/inyass-logo.png">
   
-  <!-- Google tag (gtag.js) -->
+  <!-- Cookie and analytics scripts disabled.
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWJL0NPXH3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -55,14 +55,14 @@
   });
 
 </script> 
-<!--
 <script src="https://cdn.cookiehub.eu/c2/580a1e6e.js"></script>
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(event) {
   var cpm = {};
   window.cookiehub.load(cpm);
 });
-</script> -->
+</script>
+  -->
 
   <!-- W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -80,79 +80,63 @@ document.addEventListener("DOMContentLoaded", function(event) {
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <style>
-    .w3-theme-d1 {
-    color:#fff !important;background-color:#68a2ff !important}
-    .w3-theme-d2 {
-    color:#fff !important;background-color:#428bff !important}
-    .w3-theme-d3 {
-    color:#fff !important;background-color:#2277ff !important}
-    .w3-theme-d4 {
-    color:#fff !important;background-color:#0263ff !important}
+    .w3-theme-d1, .w3-theme-d2, .w3-theme-d3, .w3-theme-d4 {
+      color:#fff !important;background-color:#1768bd !important;
+    }
 </style>
   
 </head>
-<body class="w3-light-grey">
+<body class="about-home">
+  <header class="site-header">
+    <a class="brand" href="index.html#intro" aria-label="Inyass Technology Solutions home">
+      <img src="images/inyass-logo.png" alt="Inyass Technology Solutions logo" />
+      <span>Inyass Technology <small>Solutions Limited</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html#intro"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      <a href="index.html#missionvision"><i class="fa fa-compass" aria-hidden="true"></i> Mission &amp; Vision</a>
+      <a href="index.html#management"><i class="fa fa-users" aria-hidden="true"></i> Team</a>
+      <a href="index.html#services"><i class="fa fa-cogs" aria-hidden="true"></i> Services</a>
+      <a href="index.html#clients"><i class="fa fa-handshake-o" aria-hidden="true"></i> Clients</a>
+      <a href="index.html#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+    </nav>
+  </header>
 
-  <!-- Top Navigation Bar -->
-  <div class="w3-bar w3-top w3-card w3-large w3-white" style="z-index:4;">
-    <div class="w3-row"> 
-      <div class="w3-third" style="width: 15%; margin-left: 0;">
-        <span class="w3-left w3-bar-item"><img src="https://iabubakar106.github.io/bros/Logo.jpg" alt="Logo" style="height: 40px;"/></span>
-      </div>
-      <div class="w3-third" style="width: 70%;">
-        <h3 class="section-heading w3-text-blue w3-wide" style="text-shadow:1px 1px 0 #444;"><marquee><b>Welcome to Inyass Technology Solutions Limited Official Website</b></marquee></h3>
-        <!--<span class="w3-bar-item" style="font-weight:500; font-size:1.2rem; text-shadow:1px 1px 1 #444;"><br><span class="w3-text-orange w3-text-small" style="font-size: 13px;">Elegance in every Creation</span></span>-->
-      </div>
-      <div class="w3-third" style="width: 15%; margin-bottom: 10px">
-        <button class="w3-bar-item w3-button w3-hide-large w3-right w3-hover-none w3-xlarge w3-hover-text-black" id="menu-btn" title="Toggle Navigation" >&#9776;</button>
-      </div>
-    </div>
-  </div>
-  <!-- Top Navigation Bar 
-  <div class="w3-bar w3-top w3-card w3-large w3-white" style="z-index:4;">
-    <button class="w3-bar-item w3-button w3-hide-large w3-right w3-hover-none w3-hover-text-black" id="menu-btn" title="Toggle Navigation">&#9776;</button><span class="w3-left w3-margin"><img src="https://iabubakar106.github.io/bros/Logo.jpg" alt="Logo" style="height: 40px; width:30 "/></span>
-    <span class="w3-bar-item" style="font-weight:700; font-size:1.3rem; text-shadow:1px 1px 0 #444;">Inyass Technology<br><span class="w3-text-blue w3-text-small" style="font-size: 15px;">Solutions Limited</span></span>
-  </div>-->
-
-  <!-- Sidebar / Side Navigation -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-card w3-animate-left" style="width:260px; top:63px; z-index:3;" id="mySidebar">
-    <class="w3-bar-item" style="font-weight:700; margin-top: 40px; margin-left: 0px;">
-    <a href="index.html" class="w3-bar-item w3-button w3-hover-mudstone">Home</a>
-    <!--<a href="index.html/#missionvision" class="w3-bar-item w3-button w3-hover-mudstone">Mission & Vision</a>
-    <a href="#management" class="w3-bar-item w3-button w3-hover-mudstone">Team</a>
-    <a href="#services" class="w3-bar-item w3-button w3-hover-mudstone">Services</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hover-mudstone">Contact</a>-->
-  </nav>
-
-  <!-- Overlay for mobile -->
-  <div class="w3-overlay w3-hide-large" style="cursor:pointer" id="overlay"></div>
-
-  <!-- Page Content -->
-  <div class="w3-main w3-round-large " style="margin-left:260px; margin-top:70px;">
-    <section class=" w3-container">
-          <div class="w3-center w3-white w3-card-4" style="margin-bottom: 10px;">
-            <header class=""><h3 class="w3-text-blue" style="font-weight:700; text-shadow:1px 1px 0 #444;">InyassTech Brief Description</h3></header>
-            <div class="w3-container">
-              <p class="w3-justify w3-animate-opacity w3-margin">
-                Inyass Technology Solutions Limited is a trusted technology solutions provider specializing in computer networking, website 
-                development, corporate branding, IT consulting, import & export of computer units and accessories, as well as professional manpower training.
-              </p>
-              <p class="w3-justify w3-animate-opacity w3-margin">
-                Inyass Technology Solutions Ltd formally Inyass PC Solutions Ventures is an Information Technology (IT) solution company establish and dully registered with Corporate Affairs Commission as a Limited Liability Company. The Company is successfully operating in Niger State and Nigeria at large on both small- and large-scale services in Information and Communication Technology, Web Designs (Web browsers, ftp, e-mail, associated hardware, Internet service providers, and so forth), computer training, supply and installation of computers alongside modern accessories, electronic gadgets, stationary supplies and IT collaboration, printing and publishing services. With the present market boom and concurrent development in IT across world, and the desire for upgrade in computer and information technology, the Company has successfully expanded its target from individual small scale clients to larger and bigger industrial, commercial and institutional clients. Thus, business plan, vision and goals have tasked us to making this transition successful and ensure exceptional quality service delivery to our esteemed clients.
-              </p>
-              <p class="w3-justify w3-animate-opacity w3-margin">
-                Every sector is today IT compliant, but the high and modern technology sector is the eye of the storm. The chances of wider opportunity in the sector stands a better chance in the modern world. This is simply because it defines and refines the future, while respect and discipline are crucial, notwithstanding, the inherent problems of quacks and substandard products becomes a great challenge in the industry. Inyass Technology Solutions Ltd is committed to providing customers with modern, inventive and high quality products and services that stand the test of time and are in fact, second to none. We have the "leading edge" when it comes to the technical knowhow with respect to remote computer repairs, networking, software development and installations, etc.
-              </p>
-            </div>
-          </div>
+  <main class="w3-main about-page">
+    <section class="about-hero">
+      <span class="eyebrow">About InyassTech</span>
+      <h1>Technology that helps businesses move forward.</h1>
+      <p>Inyass Technology Solutions Limited is a trusted technology solutions provider serving organizations and individuals across Nigeria.</p>
+      <a class="about-cta" href="index.html#services">Explore our services <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     </section>
-    <!-- Footer -->
-    <footer class="w3-container w3-2019-princess-blue w3-center w3-padding-16">
-      &copy; 2025 Inyass Technology Solutions Limited. All rights reserved.
-    </footer>
-  </div>
 
-  <!-- External JavaScript -->
+    <section class="about-content-card">
+      <div class="about-section-heading"><span class="about-icon"><i class="fa fa-building-o" aria-hidden="true"></i></span><div><span class="eyebrow">Who we are</span><h2>Our company</h2></div></div>
+      <p>Inyass Technology Solutions Ltd, formerly Inyass PC Solutions Ventures, is an Information Technology solutions company registered with the Corporate Affairs Commission as a limited liability company. Operating from Niger State and serving Nigeria at large, we provide ICT services to individuals, businesses, commercial organizations, and institutions.</p>
+      <p>Our work spans computer networking, website design and development, computer training, supply and installation of computers and modern accessories, electronic gadgets, stationery supplies, IT collaboration, printing, and publishing services. As technology needs grow, we continue to support clients of different sizes with dependable solutions and quality service delivery.</p>
+    </section>
+
+    <section class="about-focus-grid" aria-label="Our areas of expertise">
+      <article class="about-focus-card"><i class="fa fa-sitemap" aria-hidden="true"></i><h3>Connected systems</h3><p>Networking, software development, installation, and remote computer support.</p></article>
+      <article class="about-focus-card"><i class="fa fa-laptop" aria-hidden="true"></i><h3>Technology supply</h3><p>Quality computers, accessories, electronic gadgets, and related equipment.</p></article>
+      <article class="about-focus-card"><i class="fa fa-graduation-cap" aria-hidden="true"></i><h3>Skills development</h3><p>Practical computer training and manpower development for modern workplaces.</p></article>
+    </section>
+
+    <section class="about-commitment-card">
+      <span class="about-icon"><i class="fa fa-shield" aria-hidden="true"></i></span>
+      <div><span class="eyebrow">Our commitment</span><h2>Quality, integrity, and practical expertise</h2>
+      <p>Technology creates opportunities across every sector, but poor products and unqualified service can hold people back. Inyass Technology Solutions is committed to providing modern, inventive, high-quality products and services built to stand the test of time. Our technical experience includes remote computer repairs, networking, software development, and installations.</p></div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer">
+    <a class="footer-brand" href="index.html#intro">Inyass Technology Solutions Limited</a>
+    <p>Reliable technology solutions for business and community.</p>
+    <small>&copy; 2026 Inyass Technology Solutions Limited. All rights reserved.</small>
+  </footer>
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
   <script src="script.js"></script>
 </body>
 </html>

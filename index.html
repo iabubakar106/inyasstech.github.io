@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Inyass Technology Solutions Limited</title>
-  <link rel="icon" type="images/png" href="https://iabubakar106.github.io/bros/Logo.jpg">
+  <link rel="icon" type="image/png" href="images/inyass-logo.png">
   
-  <!-- Google tag (gtag.js) -->
+  <!-- Cookie and analytics scripts disabled.
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWJL0NPXH3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   window.cookiehub.load(cpm);
 });
 </script>
+  -->
 
   <!-- W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -81,265 +82,170 @@ document.addEventListener("DOMContentLoaded", function(event) {
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <style>
     .w3-theme-d1 {
-    color:#fff !important;background-color:#68a2ff !important}
+    color:#fff !important;background-color:#1768bd !important}
     .w3-theme-d2 {
-    color:#fff !important;background-color:#428bff !important}
+    color:#fff !important;background-color:#1768bd !important}
     .w3-theme-d3 {
-    color:#fff !important;background-color:#2277ff !important}
+    color:#fff !important;background-color:#1768bd !important}
     .w3-theme-d4 {
-    color:#fff !important;background-color:#0263ff !important}
+    color:#fff !important;background-color:#1768bd !important}
 </style>
   
 </head>
-<body class="w3-light-grey">
+<body class="w3-light-grey home-page">
 
-  <!-- Top Navigation Bar -->
-  <div class="w3-bar w3-top w3-card w3-large w3-white" style="z-index:4;">
-    <div class="w3-row"> 
-      <div class="w3-third" style="width: 15%; margin-left: 0;">
-        <span class="w3-left w3-bar-item"><img src="https://iabubakar106.github.io/bros/Logo.jpg" alt="Logo" style="height: 40px;"/></span>
-      </div>
-      <div class="w3-third" style="width: 70%;">
-        <h3 class="section-heading w3-text-blue w3-wide" style="text-shadow:1px 1px 0 #444;"><marquee><b>Welcome to Inyass Technology Solutions Limited Official Website</b></marquee></h3>
-        <!--<span class="w3-bar-item" style="font-weight:500; font-size:1.2rem; text-shadow:1px 1px 1 #444;"><br><span class="w3-text-orange w3-text-small" style="font-size: 13px;">Elegance in every Creation</span></span>-->
-      </div>
-      <div class="w3-third" style="width: 15%; margin-bottom: 10px">
-        <button class="w3-bar-item w3-button w3-hide-large w3-right w3-hover-none w3-xlarge w3-hover-text-black" id="menu-btn" title="Toggle Navigation" >&#9776;</button>
-      </div>
-    </div>
-  </div>
+  <header class="site-header">
+    <a class="brand" href="#intro" aria-label="Inyass Technology Solutions home">
+      <img src="images/inyass-logo.png" alt="Inyass Technology Solutions logo" />
+      <span>Inyass Technology <small>Solutions Limited</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="#intro"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      <a href="#management"><i class="fa fa-users" aria-hidden="true"></i> Team</a>
+      <a href="#services"><i class="fa fa-cogs" aria-hidden="true"></i> Services</a>
+      <a href="#clients"><i class="fa fa-handshake-o" aria-hidden="true"></i> Clients</a>
+      <a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+    </nav>
+  </header>
   <!-- Top Navigation Bar 
   <div class="w3-bar w3-top w3-card w3-large w3-white" style="z-index:4;">
-    <button class="w3-bar-item w3-button w3-hide-large w3-right w3-hover-none w3-hover-text-black" id="menu-btn" title="Toggle Navigation">&#9776;</button><span class="w3-left w3-margin"><img src="https://iabubakar106.github.io/bros/Logo.jpg" alt="Logo" style="height: 40px; width:30 "/></span>
+    <button class="w3-bar-item w3-button w3-hide-large w3-right w3-hover-none w3-hover-text-black" id="menu-btn" title="Toggle Navigation">&#9776;</button><span class="w3-left w3-margin"><img src="images/inyass-logo.png" alt="Logo" style="height: 40px; width:30 "/></span>
     <span class="w3-bar-item" style="font-weight:700; font-size:1.3rem; text-shadow:1px 1px 0 #444;">Inyass Technology<br><span class="w3-text-blue w3-text-small" style="font-size: 15px;">Solutions Limited</span></span>
   </div>-->
 
-  <!-- Sidebar / Side Navigation -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-card w3-animate-left" style="width:260px; top:63px; z-index:3;" id="mySidebar">
-    <class="w3-bar-item" style="font-weight:700; margin-top: 40px; margin-left: 0px;">
-    <a href="#intro" class="w3-bar-item w3-button w3-hover-mudstone">Home</a>
-    <a href="#missionvision" class="w3-bar-item w3-button w3-hover-mudstone">Mission & Vision</a>
-    <a href="#management" class="w3-bar-item w3-button w3-hover-mudstone">Team</a>
-    <a href="#services" class="w3-bar-item w3-button w3-hover-mudstone">Services</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hover-mudstone">Contact</a>
-  </nav>
-
-  <!-- Overlay for mobile -->
-  <div class="w3-overlay w3-hide-large" style="cursor:pointer" id="overlay"></div>
-
   <!-- Page Content -->
-  <div class="w3-main" style="margin-left:260px; margin-top:80px;">
-
-    <!-- Introduction Section -->
-    <section id="intro" class="w3-container w3-padding-32 w3-white w3-card w3-margin w3-round-large">
-     
-      <div class="w3-content" style="width:100%;">
-        <img class="mySlides" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" style="width:100%" alt="Website Development" />
-        <img class="mySlides" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" style="width:100%" alt="Corporate Branding and Training" />
-        <img class="mySlides" src="https://iabubakar106.github.io/bros/Manpower.jpeg" style="width:100%" alt="Manpower Training" />
+  <main class="w3-main">
+    <!-- Page about-hero -->
+    <section id="intro" class="index-about-hero">
+      <video class="intro-video" autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80" aria-hidden="true" tabindex="-1">
+        <source src="https://videos.pexels.com/video-files/30401545/13028933_1920_1080_60fps.mp4" type="video/mp4" />
+      </video>
+      <div class="intro-video-overlay" aria-hidden="true"></div>
+      <div class="index-intro-copy">
+        <span class="eyebrow">Technology solutions for a changing world</span>
+        <h1>Technology that helps your business move forward.</h1>
+        <p>Inyass Technology Solutions Limited provides dependable technology services to organizations and individuals across Nigeria. From connected systems and web development to equipment supply and professional training, we help you work smarter and grow with confidence.</p>
+        <div class="index-intro-actions">
+          <a class="about-cta" href="#services">Explore our services <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="intro-about-link" href="about.html">Get to know us</a>
+        </div>
+      </div>
+      <div class="index-intro-highlights" aria-label="Our areas of expertise">
+        <div class="intro-highlight"><span><i class="fa fa-sitemap" aria-hidden="true"></i></span><div><strong>Connected systems</strong><small>Networking and IT support</small></div></div>
+        <div class="intro-highlight"><span><i class="fa fa-code" aria-hidden="true"></i></span><div><strong>Digital solutions</strong><small>Web development and consulting</small></div></div>
+        <div class="intro-highlight"><span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span><div><strong>People and equipment</strong><small>Training and technology supply</small></div></div>
       </div>
     </section>
-    <section class="w3-margin w3-card w3-opacity">
-      <div class="w3-row w3-border">
-        <div class="w3-quarter w3-container w3-theme-d4">
-          <div class="w3-center w3-margin">
-            <button class="w3-btn w3-block w3-theme-d4 w3-wide" style="text-shadow:1px 1px 0 #444";><a href="about.html" style="text-decoration: none;"><h3><i class="fa fa-address-card-o" style="font-size:36px;color:white;"></i><br>About Us</h3></a></button>
-          </div>
-        </div>
-        <div class="w3-quarter w3-container w3-theme-d3">
-          <div class="w3-center w3-margin">
-            <button class="w3-btn w3-block w3-theme-d3 w3-wide" style="text-shadow:1px 1px 0 #444";><a href="#services" style="text-decoration: none;"><h3><i class="fa fa-diamond" style="font-size:36px;color:white;"></i><br>Services</h3></a></button>
-          </div>
-        </div>
-        <div class="w3-quarter w3-container w3-theme-d2">
-          <div class="w3-center w3-margin">
-            <button  class="w3-btn w3-block w3-theme-d2 w3-wide" style="text-shadow:1px 1px 0 #444";><a href="#clients" style="text-decoration: none;"><h3><i class="fa fa-odnoklassniki" style="font-size:36px;color:white;"></i><br>Clients</h3></a></button>
-          </div>
-        </div>
-        <div class="w3-quarter w3-container w3-theme-d1">
-          <div class="w3-center w3-margin">
-            <button class="w3-btn w3-block w3-theme-d1 w3-wide" style="text-shadow:1px 1px 0 #444";><a href="#contact" style="text-decoration: none;"><h3><i class="fa fa-users" style="font-size:36px;color:white;"></i><br>Contact</h3></a></button>
-          </div>
-        </div>
-      </div>
+    <!-- quick links -->
+    <section class="quick-links" aria-label="Quick links">
+      <a class="quick-link-card" href="about.html"><span class="quick-link-icon"><i class="fa fa-address-card-o" aria-hidden="true"></i></span><span><strong>About Us</strong><small>Get to know our company</small></span><i class="fa fa-arrow-right quick-link-arrow" aria-hidden="true"></i></a>
+      <a class="quick-link-card" href="#services"><span class="quick-link-icon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span><span><strong>Our Services</strong><small>Explore what we offer</small></span><i class="fa fa-arrow-right quick-link-arrow" aria-hidden="true"></i></a>
+      <a class="quick-link-card" href="#clients"><span class="quick-link-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></span><span><strong>Our Clients</strong><small>See who we work with</small></span><i class="fa fa-arrow-right quick-link-arrow" aria-hidden="true"></i></a>
+      <a class="quick-link-card" href="#contact"><span class="quick-link-icon"><i class="fa fa-comments-o" aria-hidden="true"></i></span><span><strong>Contact Us</strong><small>Talk with our team</small></span><i class="fa fa-arrow-right quick-link-arrow" aria-hidden="true"></i></a>
     </section>
 
     <!-- Mission & Vision Section -->
-    <section id="missionvision" class=" w3-container">
-      <div class="w3-row-padding">
-        <div class="w3-container w3-card w3-half w3-padding w3-white w3-round-large w3-leftbar w3-border-blue">
-          <h4>Mission</h4>
-          <p class="w3-justify w3-animate-left">To deliver mature, reliable, and innovative technology solutions that empower businesses and individuals all over Nigeria to succeed in the digital age.To develop workable software solutions, facilitate data processing and automation in business and to be the leading service providers in terms of supply of qualitative of goods, products and service delivery, especially in IT solutions and ICT in Nigeria and beyond.</p>
-        </div>
-        <div class="w3-container w3-card w3-half w3-padding w3-white w3-round-large w3-leftbar w3-border-blue">
-          <h4>Vision</h4>
-          <p class="w3-justify w3-animate-left">To be the foremost provider of integrated technology solutions and training services known for quality and integrity throughout Africa. To become a leading figure of quality amongst others on business automation, using Information and Communication Technology by inscribing our name in every office, organization, institution and household without compromising the quality of services and products.</p>
-        </div>
+    <section id="missionvision" class="content-section">
+      <div class="section-intro"><span class="eyebrow">What drives us</span><h2 class="section-heading">Our Mission &amp; Vision</h2><p>Building confidence and opportunity through technology.</p></div>
+      <div class="purpose-grid">
+        <article class="purpose-card mission-card">
+          <span class="purpose-icon"><i class="fa fa-bullseye" aria-hidden="true"></i></span>
+          <h3>Our Mission</h3>
+          <p>To deliver mature, reliable, and innovative technology solutions that empower businesses and individuals all over Nigeria to succeed in the digital age. To develop workable software solutions, facilitate data processing and automation in business, and be a leading service provider in the supply of quality goods, products, and services, especially in IT and ICT in Nigeria and beyond.</p>
+        </article>
+        <article class="purpose-card vision-card">
+          <span class="purpose-icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
+          <h3>Our Vision</h3>
+          <p>To be the foremost provider of integrated technology solutions and training services, known for quality and integrity throughout Africa. We aspire to lead in business automation through information and communication technology, bringing our name to offices, organizations, institutions, and households without compromising the quality of our services and products.</p>
+        </article>
       </div>
     </section>
 
     <!-- Management Team Section -->
-    <section id="management" class="w3-container w3-padding-32 w3-white w3-card w3-margin w3-round-large">
-      <h2 class="section-heading">Team</h2>
-      <div class="w3-row-padding w3-center w3-margin-top">
+    <section id="management" class="content-section team-section">
+      <div class="section-intro"><span class="eyebrow">People behind the work</span><h2 class="section-heading">Meet Our Team</h2><p>A dedicated team working to deliver dependable technology solutions.</p></div>
+      <div class="team-grid">
 
-        <div class="w3-quarter w3-margin-bottom">
-          <div class="w3-card w3-padding">
-            <img src="https://iabubakar106.github.io/bros/Founder.jpg" alt="Yahaya Abdulrahman Abubakar" class="w3-circle w3-margin-bottom" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
-            <h4>Yahaya Abdulrahman A.</h4>
-            <p class="w3-opacity">Founder</p>
-          </div>
-        </div>
+        <article class="team-card">
+          <img src="images/Founder.jpg" alt="Yahaya Abdulrahman Abubakar" />
+          <div class="team-details"><h3>Yahaya Abdulrahman A.</h3><p>Founder</p></div>
+        </article>
 
-        <div class="w3-quarter w3-margin-bottom">
-          <div class="w3-card w3-padding">
-            <img src="https://iabubakar106.github.io/bros/Software.jpg" alt="Abubakar Ibrahim" class="w3-circle w3-margin-bottom" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
-            <h4>Abubakar Ibrahim</h4>
-            <p class="w3-opacity">Co-founder/Software Developer</p>
-          </div>
-        </div>
+        <article class="team-card">
+          <img src="https://iabubakar106.github.io/bros/Software.jpg" alt="Abubakar Ibrahim" />
+          <div class="team-details"><h3>Abubakar Ibrahim</h3><p>Co-founder/Software Developer</p></div>
+        </article>
 
-        <div class="w3-quarter w3-margin-bottom">
-          <div class="w3-card w3-padding">
-            <img src="https://iabubakar106.github.io/bros/Support.jpg" alt="Yahaya Mohammed Abubakar" class="w3-circle w3-margin-bottom" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
-            <h4>Yahaya Mohammed Abubakar</h4>
-            <p class="w3-opacity">Director</p>
-          </div>
-        </div>
+        <article class="team-card">
+          <img src="images/Director.jpg" alt="Yahaya Mohammed Abubakar" />
+          <div class="team-details"><h3>Yahaya Mohammed Abubakar</h3><p>Director</p></div>
+        </article>
         
-        <div class="w3-quarter w3-margin-bottom">
-          <div class="w3-card w3-padding">
-            <img src="https://iabubakar106.github.io/bros/Secretary (2).jpg" alt="Bar. Mohammed Aliyu Kutigi" class="w3-circle w3-margin-bottom" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%;" />
-            <h4> Mohammed Aliyu Esq.</h4>
-            <p class="w3-opacity">Secretary</p>
-          </div>
-        </div>
+        <article class="team-card">
+          <img src="images/Sec.jpg" alt="Mohammed Aliyu Kutigi" />
+          <div class="team-details"><h3>Mohammed Aliyu Esq.</h3><p>Secretary</p></div>
+        </article>
         
       </div>
     </section>
 
     <!-- Goods & Services Section -->
-    <section id="services" class="w3-container w3-padding-32 w3-theme-d1 w3-card w3-margin w3-round-large">
-      <h2 class="section-heading">Our Services</h2>
-
-      <div class="w3-container w3-margin-top">
-
-        <button onclick="toggleAccordion('networkingAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
-          Computer Networking
-        </button>
-        <div id="networkingAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://iabubakar106.github.io/bros/Networking.jpeg" alt="Computer Networking" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
-          <p>Installation and maintenance of comprehensive computer networks ensuring secure and efficient connectivity.</p>
-        </div>
-
-        <button onclick="toggleAccordion('websiteAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
-          Website Development
-        </button>
-        <div id="websiteAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Website Development" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
-          <p>Custom website design and development to grow your digital presence and brand identity.</p>
-        </div>
-
-        <button onclick="toggleAccordion('brandingTrainingAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
-          Corporate Branding and Training
-        </button>
-        <div id="brandingTrainingAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Corporate Branding and Training" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
-          <p>Professional corporate branding solutions and manpower training for development and business excellence.</p>
-        </div>
-
-        <button onclick="toggleAccordion('importExportAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
-          Import & Export of Computer Equipment
-        </button>
-        <div id="importExportAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Import & Export" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
-          <p>Import and export of all computer units, equipment, machines, and accessories to meet your technological needs.</p>
-        </div>
-
-        <button onclick="toggleAccordion('accessoriesAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
-          Supply & Installation of Accessories and Parts
-        </button>
-        <div id="accessoriesAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Accessories & Parts" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
-          <p>Efficient supply and professional installation of computer accessories and parts tailored to your setup.</p>
-        </div>
-
-        <button onclick="toggleAccordion('trainingAccordion')" class="w3-button w3-block w3-white
-         w3-left-align w3-margin-bottom w3-card">
-          Manpower Training & Development
-        </button>
-        <div id="trainingAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://iabubakar106.github.io/bros/Manpower.jpeg" alt="Manpower Training" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
-          <p>Comprehensive manpower training programs for IT skills enhancement and career advancement.</p>
-        </div>
-
-        <button onclick="toggleAccordion('consultingAccordion')" class="w3-button w3-block w3-white w3-left-align w3-margin-bottom w3-card">
-          IT Consulting
-        </button>
-        <div id="consultingAccordion" class="w3-hide w3-container w3-white w3-card w3-padding w3-margin-bottom">
-          <img src="https://iabubakar106.github.io/bros/ITConsult.jpeg" alt="IT Consulting" class="w3-left w3-margin-right service-img" style="max-width: 120px; border-radius: 8px; margin-right: 15px; float: left;" />
-          <p>Professional IT consulting services to optimize your business technology strategy and operations.</p>
-        </div>
-
+    <section id="services" class="content-section services-section">
+      <div class="section-intro"><span class="eyebrow">What we do</span><h2 class="section-heading">Goods &amp; Services</h2><p>Practical technology, equipment, and training for your organization.</p></div>
+      <div class="services-grid">
+        <article class="service-card"><span class="service-icon"><i class="fa fa-sitemap" aria-hidden="true"></i></span><h3>Computer Networking</h3><p>Installation and maintenance of secure, reliable computer networks.</p></article>
+        <article class="service-card"><span class="service-icon"><i class="fa fa-code" aria-hidden="true"></i></span><h3>Website Development</h3><p>Custom website design and development to grow your digital presence.</p></article>
+        <article class="service-card"><span class="service-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></span><h3>Corporate Branding &amp; Training</h3><p>Branding solutions and practical training for business excellence.</p></article>
+        <article class="service-card"><span class="service-icon"><i class="fa fa-laptop" aria-hidden="true"></i></span><h3>Computer Equipment</h3><p>Import and export of computer units, equipment, machines, and accessories.</p></article>
+        <article class="service-card"><span class="service-icon"><i class="fa fa-wrench" aria-hidden="true"></i></span><h3>Accessories &amp; Parts</h3><p>Supply and professional installation of accessories and computer parts.</p></article>
+        <article class="service-card"><span class="service-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span><h3>Manpower Development</h3><p>IT skills training to support learning and career advancement.</p></article>
+        <article class="service-card"><span class="service-icon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span><h3>IT Consulting</h3><p>Technology guidance to improve your business strategy and operations.</p></article>
       </div>
     </section>
 
     <!-- Our Clients -->
-    <section id="clients" class="w3-container w3-center w3-padding-32 w3-margin w3-light-grey">
-      <h1 class="section-heading">Our Clients</h1>
-      <div class="w3-content" style="max-width:800px">
-          <!--<img class="mySlide" src="img_nature_wide.jpg" style="width:100%">-->
-          <div class="mySlide w3-margin w3-deep-orange w3-card " style="border-radius: 0px 40px 0px 40px;">
-            <h4 class="w3-margin w3-padding-64" style="font-weight:700; text-shadow:1px 1px 0 #444;">Ministry of Humanitarian Disaster & Management</h4>
+    <section id="clients" class="content-section clients-section">
+      <div class="section-intro"><span class="eyebrow">Trusted partnerships</span><h2 class="section-heading">Our Clients</h2><p>Organizations we are proud to support.</p></div>
+      <div class="client-showcase">
+          <div class="mySlide"><span class="client-mark"><i class="fa fa-university" aria-hidden="true"></i></span>
+            <h3>Ministry of Humanitarian Disaster &amp; Management</h3>
           </div>
-          <div class="mySlide w3-margin w3-pink w3-card " style="border-radius: 0px 40px 0px 40px;">
-            <h4 class="w3-margin w3-padding-64" style="font-weight:700; text-shadow:1px 1px 0 #444;">Premier Int. Nur. & Pri. School Bida</h4>
+          <div class="mySlide"><span class="client-mark"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+            <h3>Premier Int. Nur. &amp; Pri. School Bida</h3>
           </div>
-          <!--<img class="mySlide" src="img_snow_wide.jpg" style="width:100%">-->
-          <div class="mySlide w3-margin w3-green w3-card " style="border-radius: 0px 40px 0px 40px;">
-            <h4 class="w3-margin w3-padding-64" style="font-weight:700; text-shadow:1px 1px 0 #444;">Government College<br>Bida</h4>
+          <div class="mySlide"><span class="client-mark"><i class="fa fa-university" aria-hidden="true"></i></span>
+            <h3>Government College Bida</h3>
           </div>
-          <!--<img class="mySlide" src="img_mountains_wide.jpg" style="width:100%">-->
-          <div class="mySlide w3-margin w3-info w3-card " style="border-radius: 0px 40px 0px 40px;">
-            <h4 class="w3-margin w3-padding-64" style="font-weight:700; text-shadow:1px 1px 0 #444;">Niger State Ministry of Justice</h4>
+          <div class="mySlide"><span class="client-mark"><i class="fa fa-balance-scale" aria-hidden="true"></i></span>
+            <h3>Niger State Ministry of Justice</h3>
           </div>
-          <div class="mySlide w3-margin w3-purple w3-card " style="border-radius: 0px 40px 0px 40px;">
-            <h4 class="w3-margin w3-padding-64" style="font-weight:700; text-shadow:1px 1px 0 #444;">El-kutix Ventures<br>Limited</h4>
+          <div class="mySlide"><span class="client-mark"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+            <h3>El-kutix Ventures Limited</h3>
           </div>
-          <div class="mySlide w3-margin w3-teal w3-card " style="border-radius: 0px 40px 0px 40px;">
-            <h4 class="w3-margin w3-padding-64" style="font-weight:700; text-shadow:1px 1px 0 #444;">Niger State Universal Basic Education Board</h4>
+          <div class="mySlide"><span class="client-mark"><i class="fa fa-book" aria-hidden="true"></i></span>
+            <h3>Niger State Universal Basic Education Board</h3>
           </div>
         </div>
 
-        <div class="w3-center">
-          <div class="w3-section">
-            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮   </button>
-            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">   ❯</button>
-          </div>
-          <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-          <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-          <button class="w3-button demo" onclick="currentDiv(3)">3</button>
-          <button class="w3-button demo" onclick="currentDiv(4)">4</button>
-          <button class="w3-button demo" onclick="currentDiv(5)">5</button>
-          <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
+        <div class="w3-center client-controls" aria-label="Choose a client">
+          <button class="w3-button demo" type="button" aria-label="Show client 1" onclick="currentDiv(1)">1</button> 
+          <button class="w3-button demo" type="button" aria-label="Show client 2" onclick="currentDiv(2)">2</button> 
+          <button class="w3-button demo" type="button" aria-label="Show client 3" onclick="currentDiv(3)">3</button>
+          <button class="w3-button demo" type="button" aria-label="Show client 4" onclick="currentDiv(4)">4</button>
+          <button class="w3-button demo" type="button" aria-label="Show client 5" onclick="currentDiv(5)">5</button>
+          <button class="w3-button demo" type="button" aria-label="Show client 6" onclick="currentDiv(6)">6</button> 
         </div>
     </section>
 
     <!-- More Questions? -->
-    <section id="contact" class="w3-container w3-center w3-padding-32 w3-white w3-card w3-margin w3-round-large w3-light-grey">
-      <h1 class="section-heading">More Questions?</h1>
-      <p>Can't find the answer you're looking for? Don't hesitate to reach out to our friendly support team.</p>
-      <div class="w3-row">
-        <button class="w3-btn w3-2019-jester-red w3-round-large">
-          <div class="w3-half w3-container">
-          <a href="mailto:info@inyasstech.name.ng" class="contact-link w3-text-white"><i class="material-icons" style="font-size:16px;">email</i></a>
-        </div>
-        </button>
-        <button class="w3-btn w3-round-large w3-2019-eden">
-          <div class="w3-half w3-container">
-            <a href="https://wa.me/+2347039868688" target="_blank" class="contact-link w3-text-white"><i class="fa fa-whatsapp" style="font-size:20px; color: green;"></i></a>
-        </div>
-        </button>
+    <section id="contact" class="contact-section">
+      <div><span class="eyebrow">We’re here to help</span><h2>Have a project in mind?</h2><p>Reach out to our team and let’s talk about how we can help.</p></div>
+      <div class="contact-actions">
+        <a class="contact-button email-button" href="mailto:info@inyasstech.name.ng"><i class="fa fa-envelope" aria-hidden="true"></i> Email our team</a>
+        <a class="contact-button whatsapp-button" href="https://wa.me/2347039868688" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
       </div>
     </section>
 
@@ -352,10 +258,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     </section>-->
 
     <!-- Footer -->
-    <footer class="w3-container w3-2019-princess-blue w3-center w3-padding-16">
-      &copy; 2025 Inyass Technology Solutions Limited. All rights reserved.
+    <footer id="site-footer" class="site-footer">
+      <a class="footer-brand" href="#intro">Inyass Technology Solutions Limited</a>
+      <p>Reliable technology solutions for business and community.</p>
+      <small>&copy; 2026 Inyass Technology Solutions Limited. All rights reserved.</small>
     </footer>
-  </div>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+  </main>
 
   <!-- External JavaScript -->
   <script src="script.js"></script>
